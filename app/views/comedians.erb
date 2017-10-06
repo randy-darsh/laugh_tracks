@@ -8,14 +8,14 @@
     </li>
   </ul>
 <% end %>
+<h3>Average Comedians Age: <%= @comedians.average_comedians_age %></h3>
 
 <h1>Specials</h1>
 <% @specials.each do |special| %>
   <ul>
     <li>
-      <p>Title: <%= special.name %></p>
+      <p><%= special.name %></p>
       <p>Author: <%= special.comedian.name %></p>
     </li>
   </ul>
 <% end %>
-<h3>Average Comedians Age:<%= @comedians.average_comedians_age %></h3>
