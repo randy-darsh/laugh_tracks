@@ -8,7 +8,8 @@ class LaughTracksApp < Sinatra::Base
     erb :comedians
   end
 
-  get '/test/?:age?' do
-    "Hello #{params[:age]}"
-  end
+  # get '/test/?:age?' do
+  #   params[:age]
+  #   erb :comedians
+  # end
 end

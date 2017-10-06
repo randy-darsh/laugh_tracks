@@ -2,8 +2,9 @@
 <% @comedians.each do |comedian| %>
   <ul>
     <li>
-      <%= comedian.name %>
-      <%= comedian.age %>
+      <p>Name: <%= comedian.name %></p>
+      <p>Age: <%= comedian.age %></p>
+      <p>Specials Count: <%= comedian.specials.count %></p>
     </li>
   </ul>
 <% end %>
@@ -12,7 +13,8 @@
 <% @specials.each do |special| %>
   <ul>
     <li>
-      <%= special.name %>
+      <p>Title: <%= special.name %></p>
+      <p>Author: <%= special.comedian.name %></p>
     </li>
   </ul>
 <% end %>
