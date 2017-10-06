@@ -10,4 +10,5 @@ group :development, :test do
   gem 'tux'
   gem 'rack-test'
   gem 'rspec'
+  gem 'pry'
 end
